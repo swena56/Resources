@@ -1,0 +1,80 @@
+#backdrop{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 9998;
+  background: rgba(54,54,54, 0.7);
+}
+.modal {
+  width: 200px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  background: white;
+  display: inline-block;
+  border: 3px solid teal;  
+  box-shadow: -5px 0px 4px #444444;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -150px;
+  margin-left: -150px;
+  z-index: 9999;
+}
+
+.loader{
+  margin: 0 0 1em;
+  height: 50px;
+  width: 20%;
+  text-align: left;
+  padding: 1em;
+  margin: 0 auto 1.1em;
+  display: inline-block;
+  vertical-align: top;
+  vertical-align: left;
+}
+
+/* The actual popup (appears on top) */
+.popuptext {
+    top: -60px;
+    line-height: 90px;
+    border-radius: 6px;
+    margin-top: -280px;
+    margin-left: -30px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #FF6700;
+}
